@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0754c7">
+  <meta name="description" content="Dropstar Tools — helpful everyday tools that work in your browser, with no app installation required.">
+  <title>Dropstar Tools — Useful tools, all in one place</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#" aria-label="Dropstar Tools home">
+    <img src="assets/dropstar-logo.png" alt="Dropstar logo">
+    <span><strong>Dropstar</strong><small>Helpful tools, right here</small></span>
+  </a>
+  <nav><a href="#tools">Tools</a><a href="#about">About</a><a href="#support">Support</a></nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">NO INSTALLATION NEEDED</span>
+      <h1>Everyday tools.<br><span>One simple place.</span></h1>
+      <p>Create QR codes, calculate, convert units, compress images, merge PDFs and more — directly in your browser.</p>
+      <a class="primary-btn" href="#tools">Explore tools <span aria-hidden="true">→</span></a>
+      <p class="privacy-note">🔒 Your files are processed in your browser wherever possible.</p>
+    </div>
+    <div class="hero-art"><img src="assets/dropstar-logo.png" alt="Dropstar blue and orange star logo"></div>
+  </section>
+
+  <section class="section" id="tools">
+    <div class="section-heading"><div><span class="eyebrow">THE TOOLBOX</span><h2>What do you need today?</h2></div><p>Choose a tool to get started.</p></div>
+    <div class="tool-grid">
+      <button class="tool-card" data-tool="qr"><span class="tool-icon blue">▦</span><strong>QR Code Generator</strong><span>Create a QR code from text or a link.</span><em>Open tool ↗</em></button>
+      <button class="tool-card" data-tool="calculator"><span class="tool-icon orange">＋</span><strong>Calculator</strong><span>Quick calculations for everyday use.</span><em>Open tool ↗</em></button>
+      <button class="tool-card" data-tool="age"><span class="tool-icon purple">🎂</span><strong>Age Calculator</strong><span>Find your exact age from a birth date.</span><em>Open tool ↗</em></button>
+      <button class="tool-card" data-tool="units"><span class="tool-icon teal">⇄</span><strong>Unit Converter</strong><span>Convert length, weight and temperature.</span><em>Open tool ↗</em></button>
+      <button class="tool-card" data-tool="image"><span class="tool-icon pink">▧</span><strong>Image Compressor</strong><span>Reduce image file size in your browser.</span><em>Open tool ↗</em></button>
+      <button class="tool-card" data-tool="pdf"><span class="tool-icon red">▤</span><strong>PDF Merger</strong><span>Combine multiple PDF files into one.</span><em>Open tool ↗</em></button>
+      <button class="tool-card" data-tool="password"><span class="tool-icon navy">✳</span><strong>Password Manager</strong><span>Generate passwords and keep an encrypted local vault.</span><em>Open tool ↗</em></button>
+      <button class="tool-card" data-tool="word"><span class="tool-icon blue">Aa</span><strong>Word Counter</strong><span>Count words, characters, sentences and reading time.</span><em>Open tool ↗</em></button>
+      <button class="tool-card" data-tool="case"><span class="tool-icon orange">Aa</span><strong>Text Case Converter</strong><span>Convert text to uppercase, lowercase or title case.</span><em>Open tool ↗</em></button>
+      <button class="tool-card" data-tool="percent"><span class="tool-icon purple">%</span><strong>Percentage Calculator</strong><span>Find percentages and percentage changes.</span><em>Open tool ↗</em></button>
+      <button class="tool-card" data-tool="discount"><span class="tool-icon teal">₹</span><strong>Discount Calculator</strong><span>Calculate sale price and money saved.</span><em>Open tool ↗</em></button>
+      <button class="tool-card" data-tool="json"><span class="tool-icon pink">{ }</span><strong>JSON Formatter</strong><span>Format or minify JSON and check for errors.</span><em>Open tool ↗</em></button>
+      <button class="tool-card" data-tool="color"><span class="tool-icon red">◉</span><strong>Color Picker</strong><span>Choose a color and copy HEX or RGB values.</span><em>Open tool ↗</em></button>
+    </div>
+  </section>
+
+  <section class="tool-workspace section" id="workspace" hidden>
+    <div class="workspace-head"><div><span class="eyebrow">DROPSTAR TOOL</span><h2 id="toolTitle">Tool</h2></div><button class="ghost-btn" id="closeTool">✕ Close</button></div>
+    <div id="toolContent" class="tool-content"></div>
+  </section>
+
+  <section class="about section" id="about">
+    <div><span class="eyebrow">ABOUT DROPSTAR</span><h2>Small tasks, made simpler.</h2></div>
+    <p>Dropstar is a browser-based toolbox for useful everyday tasks. No app installation is needed. Tools that handle files, such as image compression and PDF merging, run locally in your browser. Some features load open-source libraries from a CDN and therefore need an internet connection.</p>
+  </section>
+  <section class="support section" id="support">
+    <div><span class="eyebrow">WE’RE HERE TO HELP</span><h2>Need a hand?</h2><p>Questions, feedback or suggestions for a new tool? Send us a message.</p>
+      <div class="about-details"><h3>What you can do on Dropstar</h3><p>Use handy browser tools for everyday calculations, text editing, image compression, QR codes and PDFs. We aim to keep the experience simple, responsive and accessible on desktop and mobile.</p><h3>Privacy and responsible use</h3><p>Most tools process your input in your browser. Avoid entering confidential information into any online tool unless you understand how it works. The password vault is a starter utility, not a replacement for a professionally audited password manager.</p><h3>Have an idea?</h3><p>Tell us which tool you would like to see next. We welcome feedback and suggestions.</p></div></div>
+    <a class="support-email" href="mailto:reachus@dropstar.co.in">✉ reachus@dropstar.co.in<br><small>8884504563</small></a>
+  </section>
+</main>
+<footer><a class="footer-brand" href="#"><img src="assets/favicon.png" alt=""> Dropstar</a><span>© <span id="year"></span> Dropstar Tools. Made for everyday usefulness.</span><a href="mailto:reachus@dropstar.co.in">Contact support</a></footer>
+</body>
+</html>
